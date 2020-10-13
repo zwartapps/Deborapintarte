@@ -25,7 +25,11 @@ form{
 
 }
 
-
+p{
+  font-size: large;
+  text-align: justify;
+  font-family: 'Aclonica';
+}
 
 /* Style the active class, and buttons on mouse-over */
 .active {  
@@ -52,6 +56,7 @@ form{
   background-color: #292b2c;
   border-radius: 10%;
   font-size: 1.5em;
+  margin-bottom: 50px;
 }
 
 .special{
@@ -59,6 +64,7 @@ form{
   text-align: center;
   font-family: 'Aclonica';
   font-size: 20px;
+  margin: 40px 0 40px 0;
 }
 
 ul.special {
@@ -79,10 +85,6 @@ ul.special {
 
 
 /*******cards*/
-
-
-
-
 h5
 {
   margin:0px;
