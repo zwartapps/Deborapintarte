@@ -1,55 +1,44 @@
-.map-container{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    }
-    .map-container iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    }
-
-    
-    html {
-      scroll-behavior: smooth;
-    }
-
-
-/*Arrow button*/
-.to-top {
-  background: white;
-  position: fixed;
-  bottom: 16px;
-  right:32px;
-  width:50px;
-  height:50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size:32px;
-  color:#1f1f1f;
-  text-decoration: none;
-  opacity:0;
-  pointer-events: none;
-  transition: all .4s;
+html {
+  scroll-behavior: smooth;
 }
 
-.to-top.active {
-  bottom:32px;
-  pointer-events: auto;
-  opacity:1;
+/*grid view*/
+* {
+  box-sizing: border-box;
+}
+
+section{
+  margin-top: 100px;
+}
+
+form{
+  margin-bottom: 100px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active {  
+  color: white;
+}
+
+/*margin for the viewable section*/
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -50px 0 0;
+}
+
+#topnavbar{
+  margin-bottom: 100px;
 }
 
 .display-2{
   align-content: center;
   text-align: center;
   font-family: 'Aclonica';
-  color: white;
-  background-color: #0E0B0B;
+  color: rgb(255, 245, 245);
+  background-color: #292b2c;
+  border-radius: 5%;
 }
 
 .special{
@@ -71,12 +60,133 @@ ul.special {
   margin-bottom: 50px;
 }
 
-.navbar-nav{
-  font-size: 20px;
+#carouselID{
+  width: auto;
 }
 
-.jumbotron{
-  font-family: 'Aclonica';
+
+/*******cards*/
+
+
+
+
+h5
+{
+  margin:0px;
+  font-size:1.4em;
+  font-weight:700;
 }
 
-/*test*/
+
+
+.center
+{
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End Non-Essential  */
+
+.property-card
+{
+  margin: 20px;
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image
+{
+  height:6em;
+  width:14em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image:url('/images/card1.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property-description
+{
+  background-color: #FAFAFC;
+  height:12em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+
+.property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.property-card:hover .property-social-icons:hover
+{
+  background-color:blue;
+  cursor:pointer;
+}
+
+
+
+
+.property-image-title
+{
+text-align:center;
+position:Relative;
+top:40%;
+opacity:0;
+transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+color:white;
+font-size:1.2em;
+}
+
+.property-card:hover .property-image-title
+{
+opacity:1;
+}
+
