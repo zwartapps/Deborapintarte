@@ -27,8 +27,11 @@ form{
 
 p{
   font-size: large;
-  text-align: justify;
   font-family: 'Aclonica';
+}
+
+.about{
+  text-align: justify;
 }
 
 /* Style the active class, and buttons on mouse-over */

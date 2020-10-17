@@ -12,6 +12,11 @@
     <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
     <!--Personal CSS-->
     <link rel="stylesheet" href="/css/main.css">
+    <!--Favicon icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images//favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     
     <title>Deborapintarte</title>
 </head>
@@ -57,8 +62,8 @@
     <section>
         <div class="container"  id="about">
             <h1  class="display-2">Sobre DeborapintArte</h1>     
-            <p>DeborapintArte, pinta murales de pared en hoteles, restaureantes, oficinas, despachos, locales comerciales y viviendas.</p>
-            <p>En nuestros diseños de interiores y exteriores buscamos la belleza y el estilo acorde con la marca u espacio a decorar. En una era en que la compentencia, conseguir una identidad, ofrecerle al consumidor algo diferente es esencial y garantizaran un feedback positivo</p>
+            <p class="about">DeborapintArte, pinta murales de pared en hoteles, restaureantes, oficinas, despachos, locales comerciales y viviendas.</p>
+            <p class="about">En nuestros diseños de interiores y exteriores buscamos la belleza y el estilo acorde con la marca u espacio a decorar. En una era en que la compentencia, conseguir una identidad, ofrecerle al consumidor algo diferente es esencial y garantizaran un feedback positivo</p>
             <div>
                 <p>
                     <ul class="special">
@@ -76,155 +81,144 @@
         </div>
     </section>
     
-    <div class="container">    
-        <!--Carousel-->
+    <div class="container">  <!--Carousel-->
         <div id="carouselID" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselID" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselID" data-slide-to="1"></li>
                 <li data-target="#carouselID" data-slide-to="2"></li>
-                <li data-target="#carouselID" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner my-5">
-                <div class="carousel-item active">
-                    <img src="images/1.jpg" class="d-block w-100" alt="DeborapintArte 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/2.jpg" class="d-block w-100" alt="DeborapintArte 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/3.jpg" class="d-block w-100" alt="DeborapintArte 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/4.jpg" class="d-block w-100" alt="DeborapintArte 4">   
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselID" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselID" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>        
-    </div> 
-    
-    
-    <section id="projects">
-        <div class="container">    
-            <h1 class="display-2">Trabajos</h1>    
-            <div class="row">                    
-                
-                <div class="property-card">
-                    <a href="#">
-                        <div class="property-image">
-                            <div class="property-image-title">
-                                <h5> Murales</h5>    <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                            </div>
-                        </div></a>
-                        <div class="property-description">
-                            <h5> Murales</h5>
-                            <p>Pintamos murales en oficinas, locales comerciales, casas etc</p>
-                        </div>
-                        <a href="#">                               
-                        </a>
+                <li data-target="#carouselID" data-slide-to="3"></li></ol>
+                <div class="carousel-inner my-5">
+                    <div class="carousel-item active">
+                        <img src="images/1.jpg" class="d-block w-100" alt="DeborapintArte 1">
                     </div>
+                    <div class="carousel-item">
+                        <img src="images/2.jpg" class="d-block w-100" alt="DeborapintArte 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/3.jpg" class="d-block w-100" alt="DeborapintArte 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/4.jpg" class="d-block w-100" alt="DeborapintArte 4">   
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselID" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselID" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>        
+        </div> 
+        
+        
+        <section id="projects">
+            <div class="container">    
+                <h1 class="display-2">Trabajos</h1>    
+                <div class="row">                    
                     
                     <div class="property-card">
                         <a href="#">
                             <div class="property-image">
                                 <div class="property-image-title">
-                                    <h5>Textil</h5> <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                                    <h5>Murales</h5>
                                 </div>
                             </div></a>
                             <div class="property-description">
-                                <h5>Textil</h5>
-                                <p>Pintamos sobre textil como zapatillas, chaquetas etc</p>
-                            </div>
-                            <a href="#">                               
-                            </a>
+                                <h5>Murales</h5>
+                                <p>Pintamos murales en oficinas, locales comerciales, casas etc</p>
+                            </div>                           
                         </div>
-                        
+                   
                         <div class="property-card">
                             <a href="#">
                                 <div class="property-image">
                                     <div class="property-image-title">
-                                        <h5>Mascarillas</h5>      <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                                        <h5>Textil</h5>
                                     </div>
                                 </div></a>
                                 <div class="property-description">
-                                    <h5>Mascarillas</h5>
-                                    <p>Hacemos mascarillas seguras con diferentes diseños</p>
-                                </div>
-                                <a href="#">                               
-                                </a>
+                                    <h5>Textil</h5>
+                                    <p>Pintamos sobre textil como zapatillas, chaquetas etc</p>
+                                </div>                            
                             </div>
-
+                            
                             <div class="property-card">
                                 <a href="#">
                                     <div class="property-image">
                                         <div class="property-image-title">
-                                            <h5>Otros</h5>      <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                                            <h5>Mascarillas</h5> 
                                         </div>
                                     </div></a>
                                     <div class="property-description">
-                                        <h5>Otros</h5>
-                                        <p>Hacemos otras cosas y diseños personalizados</p>
-                                    </div>
-                                    <a href="#">                               
-                                    </a>
+                                        <h5>Mascarillas</h5>
+                                        <p>Hacemos mascarillas seguras con diferentes diseños</p>
+                                    </div>                               
                                 </div>
+                                
+                                <div class="property-card">
+                                    <a href="#">
+                                        <div class="property-image">
+                                            <div class="property-image-title">
+                                                <h5>Otros</h5>
+                                            </div>
+                                        </div></a>
+                                        <div class="property-description">
+                                            <h5>Otros</h5>
+                                            <p>Hacemos otras cosas y diseños personalizados</p>
+                                        </div>                                     
+                                    </div>
+                                </div>                
+                            </div>
+                        </section>
+                        
+                        <!--Form-->
+                        <section id="contact">
+                            <div>
+                                <div class="container">
+                                    <h1 class="display-2">Contacto</h1>                          
+                                </div>
+                            </div>
                             
-                        </div>                
-                    </div>
-                </section>
-                
-                <!--Form-->
-                <section id="contact">
-                    <div>
-                        <div class="container">
-                            <h1 class="display-2">Contacto</h1>                          
-                        </div>
-                    </div>
+                            <div class="container">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1"><p>Nombre</p></label>
+                                        <input type="text" class="form-control" id="nombre" placeholder="Introducza tu nombre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1"><p>E-mail</p></label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Introduzca tu e-mail" required>
+                                        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu e-mail con nadie</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comentarios"><p>Mensaje</p></label>
+                                        <textarea rows="5"  class="form-control" id="nombre" placeholder="Escribe tu mensaje" required></textarea>
+                                    </div>            
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                    <button class="btn btn-danger" type="reset">Cancelar</button>
+                                </form>
+                            </div>         
+                        </section>
+                        
+                        
+                        <!-- Optional JavaScript -->
+                        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                        <script src="js/scripts.js"></script>
+                        
+                        
+                    </body>
                     
-                    <div class="container">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" >Nombre</label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Introducza tu nombre" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" >E-mail</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Introduzca tu e-mail" required>
-                                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su e-mail con nadie</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="comentarios" >Comentarios</label>
-                                <textarea rows="5"  class="form-control" id="nombre" placeholder="Escriba sus comentarios" required></textarea>
-                            </div>            
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                            <button class="btn btn-danger" type="reset">Cancelar</button>
-                        </form>
-                    </div>         
-                </section>
-                
-                
-                <!-- Optional JavaScript -->
-                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-                <script src="js/scripts.js"></script>
-                
-                
-            </body>
-            
-            
-            <!--Footer-->
-            <footer class="py-3 bg-dark sticky-bottom">
-                <div class="container "><p class="m-0 text-center text-white">Zwart Apps 2020 &#169</p></div>
-            </footer>
-            
-            
-            </html>
+                    
+                    <!--Footer-->
+                    <footer class="py-3 bg-dark sticky-bottom">
+                        <div class="m-0 text-center text-white">Zwart Apps 2020 &#169</div>
+                    </footer>
+                    
+                    
+                    </html>
