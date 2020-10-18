@@ -120,8 +120,8 @@
                 <div class="row">                    
                     
                     <div class="property-card">
-                        <a href="#">
-                            <div class="property-image">
+                        <a href="#projects" onclick="openModal();currentSlide(1)">
+                            <div class="property-image ">
                                 <div class="property-image-title">
                                     <h5>Murales</h5>
                                 </div>
@@ -131,7 +131,66 @@
                                 <p>Pintamos murales en oficinas, locales comerciales, casas etc</p>
                             </div>                           
                         </div>
-                   
+                        
+                        <!-- The Modal/Lightbox -->
+                        <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+                                
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 4</div>
+                                    <img src="/images/android-chrome-192x192.png" style="width:100%">
+                                </div>
+                                
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 4</div>
+                                    <img src="/images/card1.png" style="width:100%">
+                                </div>
+                                
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 4</div>
+                                    <img src="/images/android-chrome-192x192.png" style="width:100%">
+                                </div>
+                                
+                                <div class="mySlides">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="/images/card1.png" style="width:100%">
+                                </div>
+                                
+                                <!-- Next/previous controls -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                
+                                <!-- Caption text -->
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                </div>
+                                
+                                <!-- Thumbnail image controls -->
+                               <div class="row">
+                                <div class="columnModal">
+                                    <img class="demo" src="/images/android-chrome-192x192.png" onclick="currentSlide(1)" alt="Nature">
+                                </div>
+                                
+                                <div class="columnModal">
+                                    <img class="demo" src="/images/cardModal.png" onclick="currentSlide(2)" alt="Snow">
+                                </div>
+                                
+                                <div class="columnModal">
+                                    <img class="demo" src="/images/android-chrome-192x192.png" onclick="currentSlide(3)" alt="Mountains">
+                                </div>
+                                
+                                <div class="columnModal">
+                                    <img class="demo" src="/images/cardModal.png" onclick="currentSlide(4)" alt="Lights">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
                         <div class="property-card">
                             <a href="#">
                                 <div class="property-image">
