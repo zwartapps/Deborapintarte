@@ -1,9 +1,64 @@
-const toTop = document.querySelector(".to-top");
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
-    toTop.classList.add("active");
-  } else {
-    toTop.classList.remove("active");
+//Auto close hamburger menu mobile
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var click = $(event.target);
+        var _open = $(".navbar-collapse").hasClass("show");
+        if (_open === true && !click.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+    });
+  });
+  
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myNavbar");
+  var lis = header.getElementsByClassName("nav-item");
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace("active", "");
+    this.className += " active";
+    });
   }
-})
+
+  //Modal LightBox
+
+  // Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
